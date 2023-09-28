@@ -1,0 +1,64 @@
+.title{
+  font-family: 'roboto';
+}
+
+p{
+  font-family: 'roboto';
+}
+
+h3{
+  border-style: double;
+  display: inline-block;
+  padding: 3px;
+  background-color: lawngreen;
+}
+
+.homepage-img{
+  float: right;
+  animation: fade-in-right 500ms forwards;
+  box-shadow: 5px 5px 10px rgba(0,0,0,1);  
+}
+
+.menu{
+  text-align: center;
+}
+
+.menu-btns{
+  display: inline-block;
+  padding: 3px;
+  transform: scale(1.07);
+  transition: all 300ms ease-in-out;
+}
+
+.sign-up-btn:hover {
+  background-color: rgb(177, 168, 209);
+  border-style: double;
+  transform: scale(1.07);
+  transition: all 300ms ease-in-out;
+}
+
+@keyframes fade-in-right{
+  0% {
+    transform: translateX(-25%);
+    opacity:0
+  }
+  
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .homepage-img {
+    animation: none;
+  }
+  .faq-btn:hover {
+    transform: none;
+    transition: none;
+  }
+  .sign-up-btn:hover {
+    transform: none;
+    transition: none;
+  }
+}
